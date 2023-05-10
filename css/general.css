@@ -48,10 +48,10 @@ Medium: 11px
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #676767;
 }
 
 html {
+  background-color: #676767;
   font-size: 62.5%;
 }
 

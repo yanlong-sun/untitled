@@ -23,15 +23,121 @@
     ></script>
   </head>
   <body>
+    <nav class="header">
+      <a href="#" class="home-link"
+        ><ion-icon name="home-outline"></ion-icon
+      ></a>
+      <ul class="nav-items">
+        <li><a href="#part2-experience">Timeline</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Posts</a></li>
+      </ul>
+    </nav>
     <section class="home">
-      <nav class="header">
-        <h3 class="initial">Y/S</h3>
-        <ul class="nav-items">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Posts</a></li>
-        </ul>
-      </nav>
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="terminal-header-button">
+            <button class="btn close">
+              <ion-icon name="close-circle" class="icon"></ion-icon>
+            </button>
+            <button class="btn hide">
+              <ion-icon name="remove-circle" class="icon"></ion-icon>
+            </button>
+            <button class="btn zoom">
+              <ion-icon name="chevron-down-circle" class="icon"></ion-icon>
+            </button>
+          </div>
+          <div class="terminal-title">yanlongsun@Yanlong</div>
+        </div>
+        <div class="terminal-body">
+          <!-- hello -->
+          <div class="qa qa--1">
+            <div class="question question--1">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="arrow-icon"
+              ></ion-icon>
+              <span class="prompt">~</span>
+              <span class="command">echo 'Hello World!'</span>
+            </div>
+            <div class="response response--1">
+              <span class="output">
+                <span class="code-color code-color-1">Hello</span>, and
+                <span class="code-color code-color-2">welcome</span> to my
+                personal webpage!
+              </span>
+            </div>
+          </div>
+          <!-- whoami -->
+          <div class="qa qa--1">
+            <div class="question question--1">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="arrow-icon"
+              ></ion-icon>
+              <span class="prompt">~</span>
+              <span class="command">whoami</span>
+            </div>
+            <div class="response response--1">
+              <span class="output">
+                My name is
+                <span class="code-color code-color-3">Yanlong</span></span
+              >
+            </div>
+          </div>
+          <!-- pwd -->
+          <div class="qa qa--1">
+            <div class="question question--1">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="arrow-icon"
+              ></ion-icon>
+              <span class="prompt">~</span>
+              <span class="command">pwd</span>
+            </div>
+            <div class="response response--1">
+              <span class="output">
+                I currently reside in
+                <span class="code-color code-color-4">Los Angeles</span>
+              </span>
+            </div>
+          </div>
+          <!-- grep -r 'Contact' -->
+          <div class="qa qa--1">
+            <div class="question question--1">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="arrow-icon"
+              ></ion-icon>
+              <span class="prompt">~</span>
+              <span class="command">grep -r 'Contact'</span>
+            </div>
+            <div class="response response--1">
+              <span class="output">
+                <p>
+                  "./<span class="code-color code-color-5">email</span>:
+                  sunyanlong712@gmail.com"
+                </p>
+                <p>
+                  "./phone:
+                  <span class="code-color code-color-2">571-315-3972</span>"
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <!-- ... -->
+          <div class="qa qa--1">
+            <div class="question question--1">
+              <ion-icon
+                name="arrow-forward-outline"
+                class="arrow-icon"
+              ></ion-icon>
+              <span class="prompt">~</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="introduction">
         <h1 class="myname">Yanlong Sun</h1>
         <p class="summary">
@@ -64,115 +170,65 @@
           ></span>
         </div>
       </div>
-      <div class="terminal-container">
-        <div class="terminal">
-          <div class="terminal-header">
-            <div class="terminal-header-button">
-              <button class="btn close">
-                <ion-icon name="close-circle" class="icon"></ion-icon>
-              </button>
-              <button class="btn hide">
-                <ion-icon name="remove-circle" class="icon"></ion-icon>
-              </button>
-              <button class="btn zoom">
-                <ion-icon name="chevron-down-circle" class="icon"></ion-icon>
-              </button>
-            </div>
-            <div class="terminal-title">yanlongsun@Yanlong</div>
-          </div>
-          <div class="terminal-body">
-            <!-- hello -->
-            <div class="qa qa--1">
-              <div class="question question--1">
-                <span>(base)</span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="arrow-icon"
-                ></ion-icon>
-                <span class="prompt">~</span>
-                <span class="command">echo 'Hello World!'</span>
-              </div>
-              <div class="response response--1">
-                <span class="output">
-                  <span class="code-color code-color-1">Hello</span>, and
-                  <span class="code-color code-color-2">welcome</span> to my
-                  personal webpage!
-                </span>
-              </div>
-            </div>
-            <!-- whoami -->
-            <div class="qa qa--1">
-              <div class="question question--1">
-                <span>(base)</span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="arrow-icon"
-                ></ion-icon>
-                <span class="prompt">~</span>
-                <span class="command">whoami</span>
-              </div>
-              <div class="response response--1">
-                <span class="output">
-                  My name is
-                  <span class="code-color code-color-3">Yanlong</span></span
-                >
-              </div>
-            </div>
-            <!-- pwd -->
-            <div class="qa qa--1">
-              <div class="question question--1">
-                <span>(base)</span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="arrow-icon"
-                ></ion-icon>
-                <span class="prompt">~</span>
-                <span class="command">pwd</span>
-              </div>
-              <div class="response response--1">
-                <span class="output">
-                  I currently reside in
-                  <span class="code-color code-color-4">Los Angeles</span>
-                </span>
-              </div>
-            </div>
-            <!-- grep -r 'Contact' -->
-            <div class="qa qa--1">
-              <div class="question question--1">
-                <span>(base)</span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="arrow-icon"
-                ></ion-icon>
-                <span class="prompt">~</span>
-                <span class="command">grep -r 'Contact'</span>
-              </div>
-              <div class="response response--1">
-                <span class="output">
-                  <p>
-                    "./<span class="code-color code-color-5">email</span>:
-                    sunyanlong712@gmail.com"
-                  </p>
-                  <p>
-                    "./phone:
-                    <span class="code-color code-color-2">571-315-3972</span>"
-                  </p>
-                </span>
-              </div>
-            </div>
+    </section>
 
-            <!-- ... -->
-            <div class="qa qa--1">
-              <div class="question question--1">
-                <span>(base)</span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="arrow-icon"
-                ></ion-icon>
-                <span class="prompt">~</span>
+    <section id="part2-experience">
+      <div class="time-line-container">
+        <div><h3 class="time-line-header">Timeline</h3></div>
+        <div class="timeline-option">
+          <button>button(education/workexp)</button>
+          <button>button(education/workexp)</button>
+          <button>button(education/workexp)</button>
+        </div>
+        <div class="time-line">
+          <ul class="timer">
+            <li class="step1">
+              <p>BirthDay</p>
+            </li>
+            <li class="step2">
+              <span>2</span>
+              <div class="content">
+                <h3>Definition list</h3>
+                <p>
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </p>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="step3">
+              <span>3</span>
+              <div class="content">
+                <h3>Definition list</h3>
+                <p>
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </p>
+              </div>
+            </li>
+            <li class="step4">
+              <span>4</span>
+              <div class="content">
+                <h3>Definition list</h3>
+                <p>
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="timer-time">
+            <li class="time">Jan, 1998</li>
+            <li class="time">Aug, 2015</li>
+            <li class="time">Jun, 2019</li>
+            <li class="time">Jan, 2020</li>
+            <li class="time">Dec, 2021</li>
+            <li class="time">Jan, 2022</li>
+            <li class="time">Feb, 2023</li>
+            <li class="time">Now</li>
+          </ul>
         </div>
       </div>
     </section>
