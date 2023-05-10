@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <section class="home">
+      <nav class="header">
+        <h3 class="initial">Y/S</h3>
+        <ul class="nav-items">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Posts</a></li>
+        </ul>
+      </nav>
+      <div class="introduction">
+        <h1 class="myname">Yanlong Sun</h1>
+        <p class="summary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero
+          architecto reprehenderit deleniti, id cumque recusandae exercitationem
+          nulla quae molestias itaque, iure inventore fuga, nostrum tenetur nisi
+          dolores adipisci tempore.
+        </p>
+        <div class="contact">
+          <span
+            ><a href="//https://github.com/yanlong-sun"
+              ><ion-icon
+                name="logo-github"
+                class="icon-contact icon-github"
+              ></ion-icon></a
+          ></span>
+          <span
+            ><a href="https://www.linkedin.com/in/yanlong-sun/"
+              ><ion-icon
+                name="logo-linkedin"
+                class="icon-contact icon-linkedin"
+              ></ion-icon></a
+          ></span>
+          <span
+            ><a href="https://www.linkedin.com/in/yanlong-sun/"
+              ><ion-icon
+                name="mail-outline"
+                class="icon-contact icon-mail"
+              ></ion-icon></a
+          ></span>
+        </div>
+      </div>
+      <div class="terminal-container">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-header-button">
+              <button class="btn close">
+                <ion-icon name="close-circle" class="icon"></ion-icon>
+              </button>
+              <button class="btn hide">
+                <ion-icon name="remove-circle" class="icon"></ion-icon>
+              </button>
+              <button class="btn zoom">
+                <ion-icon name="chevron-down-circle" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="terminal-title">yanlongsun@Yanlong</div>
+          </div>
+          <div class="terminal-body">
+            <!-- hello -->
+            <div class="qa qa--1">
+              <div class="question question--1">
+                <span>(base)</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">echo 'Hello World!'</span>
+              </div>
+              <div class="response response--1">
+                <span class="output">
+                  <span class="code-color code-color-1">Hello</span>, and
+                  <span class="code-color code-color-2">welcome</span> to my
+                  personal webpage!
+                </span>
+              </div>
+            </div>
+            <!-- whoami -->
+            <div class="qa qa--1">
+              <div class="question question--1">
+                <span>(base)</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">whoami</span>
+              </div>
+              <div class="response response--1">
+                <span class="output">
+                  My name is
+                  <span class="code-color code-color-3">Yanlong</span></span
+                >
+              </div>
+            </div>
+            <!-- pwd -->
+            <div class="qa qa--1">
+              <div class="question question--1">
+                <span>(base)</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">pwd</span>
+              </div>
+              <div class="response response--1">
+                <span class="output">
+                  I currently reside in
+                  <span class="code-color code-color-4">Los Angeles</span>
+                </span>
+              </div>
+            </div>
+            <!-- grep -r 'Contact' -->
+            <div class="qa qa--1">
+              <div class="question question--1">
+                <span>(base)</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">grep -r 'Contact'</span>
+              </div>
+              <div class="response response--1">
+                <span class="output">
+                  <p>
+                    "./<span class="code-color code-color-5">email</span>:
+                    sunyanlong712@gmail.com"
+                  </p>
+                  <p>
+                    "./phone:
+                    <span class="code-color code-color-2">571-315-3972</span>"
+                  </p>
+                </span>
+              </div>
+            </div>
+
+            <!-- ... -->
+            <div class="qa qa--1">
+              <div class="question question--1">
+                <span>(base)</span>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

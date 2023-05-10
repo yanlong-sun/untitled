@@ -1,0 +1,219 @@
+/* *********** */
+/*  main page  */
+/* *********** */
+
+.home {
+  max-width: 120rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 6.5fr 3.5fr;
+  grid-template-rows: 4.8rem auto;
+  row-gap: 1.8rem;
+  align-items: center;
+}
+
+/*   nav bar   */
+.header {
+  height: 4.8rem;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.4rem;
+}
+.initial {
+  font-size: 3.6rem;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+  color: #ffb733;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.2rem;
+}
+.nav-items a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffb733;
+}
+
+/* intro */
+.introduction {
+  grid-column: 1/2;
+  padding: 0 7.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.myname {
+  color: #baee6a;
+  font-size: 3.2rem;
+  font-weight: 400;
+  align-self: center;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.summary {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.icon-contact {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #9ce62a;
+}
+
+/* terminal window */
+.terminal-container {
+  max-width: 700rem;
+  grid-column: 2/3;
+  margin: 1.2rem 1.2rem;
+}
+.terminal-container:hover {
+  box-shadow: 0 0.05rem 0.4rem 0.2rem rgb(0, 0, 0, 0.45);
+}
+
+.terminal {
+  height: 80%;
+  border: 1px #444 solid;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 0.4rem 0.2rem rgb(0, 0, 0, 0.45);
+}
+
+.terminal-header {
+  height: 2.4rem;
+  display: grid;
+  background-color: #333;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal-header-button {
+  background-color: #333;
+  display: flex;
+  align-content: space-evenly;
+  gap: 0.4rem;
+}
+
+.terminal-title {
+  background-color: #333;
+  justify-self: center;
+  font-size: 1.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon {
+  background-color: #333;
+}
+
+.btn:hover.close,
+.btn:active.close {
+  color: #ff6666;
+}
+
+.btn:hover.hide,
+.btn:active.hide {
+  color: #ffd280;
+}
+.btn:hover.zoom,
+.btn:active.zoom {
+  color: #d6ff97;
+}
+
+.terminal-header-button .close {
+  color: #ff1a1a;
+}
+.terminal-header-button .hide {
+  color: #ffb733;
+}
+.terminal-header-button .zoom {
+  color: #9ce62a;
+}
+
+.terminal-body {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  cursor: text;
+  gap: 0.4rem;
+}
+.terminal-line {
+  padding: 0.4rem;
+}
+
+/* terminal content */
+
+.qa {
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.question {
+  display: flex;
+  gap: 0.4rem;
+  align-content: center;
+}
+
+.prompt {
+  color: aquamarine;
+  margin-right: 0.8rem;
+}
+
+.arrow-icon {
+  color: #9ce62a;
+}
+span p {
+  line-height: 1.5;
+}
+
+.code-color-1 {
+  color: #f4ab9b;
+}
+
+.code-color-2 {
+  color: #bbcaa5;
+}
+
+.code-color-3 {
+  color: #ffe38a;
+}
+
+.code-color-4 {
+  color: #a6dffe;
+}
+
+.code-color-5 {
+  color: #db7ecd;
+}
