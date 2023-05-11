@@ -28,5 +28,4 @@ jobs:
 
       - name: Make files public
         run: |
-          aws s3api put-object-acl --bucket yanlong-homepage --acl public-read --key index.html
-          aws s3api put-object-acl --bucket yanlong-homepage --acl public-read --key css/*
+          aws s3api put-object-acl --bucket yanlong-homepage --acl public-read
