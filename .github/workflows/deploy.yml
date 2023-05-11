@@ -28,4 +28,4 @@ jobs:
 
       - name: Make files public
         run: |
-          aws s3api put-bucket-acl --bucket yanlong-homepage --acl public-read
+          aws s3api put-bucket-acl --bucket yanlong-homepage --acl public-read --recursive
