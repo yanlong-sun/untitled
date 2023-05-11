@@ -22,7 +22,7 @@ jobs:
           aws configure set aws_access_key_id ${{secrets.BUCKET_ID}}
           aws configure set aws_secret_access_key ${{secrets.BUCKET_KEY}}
 
-      - name: Synv files to S3 bucket
+      - name: Sync files to S3 bucket
         run: |
           aws s3 sync . s3://yanlong-sun.com --delete --exclude ".git/*"
 
