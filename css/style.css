@@ -50,7 +50,7 @@
 /* *********** */
 
 .home {
-  width: 120rem;
+  width: 100rem;
   margin: 0 auto;
   height: 85vh;
   display: grid;
@@ -269,55 +269,258 @@ span p {
 #part2-experience {
   height: 100vh;
   border-bottom: 0.5px #555 solid;
+  background-size: 100%;
+  background-size: 100px 100px;
 }
 
-.time-line-container {
-  margin: 6.4rem 6.4rem;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  row-gap: 9.6rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 6fr;
-  row-gap: 3.2rem;
+.timeline-container {
+  width: 100rem;
+  margin: 3.2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
-.time-line-header {
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.timeline-header {
   font-size: 3.2rem;
-  padding: 3.2rem auto;
   font-weight: 400;
-  letter-spacing: 1.4;
-}
-.time-line-option {
-  padding: 3.2rem auto;
-}
-.time-line {
-  height: 100%;
-  max-width: 70rem;
+  text-transform: uppercase;
 }
 
-.timer {
-  display: grid;
-  grid-template-columns: 1fr 2fr 4 fr 0.5 fr 2 fr 0.1fr 1.2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.step1 {
-  border-bottom: 2px #9ce62a solid;
-}
-.step2 {
-  border-top: 2px #7d5584 solid;
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-.step3 {
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-.step4 {
-  grid-row: 2/3;
-  grid-column: 4/5;
-}
-
-.timer li {
+/* Timeline - Years */
+.timelines-years {
+  padding: 0 2rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #edf7ca 0%, #bbe7fa 100%);
   list-style: none;
+}
+
+.timelines-years li {
+  display: inline-block;
+  width: 20rem;
+  color: #c571b9;
+  font-size: 1.2rem;
+  text-indent: -0.8rem;
+}
+
+/* Display last year */
+.timelines-years li:last-child {
+  width: 1.2rem;
+}
+
+/* Timeline - Events */
+.timeline-events {
+  padding: 0;
+  list-style: none;
+
+  white-space: nowrap;
+  /* Fix display: inline-block spacing issue */
+  font-size: 0;
+}
+
+.timeline-events h2,
+.timeline-events h3,
+.timeline-events h4 {
+  margin: 0 0 1px 0;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.timeline-events h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.timeline-events h4 {
+  color: #fff;
+  font-style: italic;
+}
+
+.timeline-events li {
+  position: relative;
+  display: inline-block;
+}
+
+.timeline-events li:before {
+  position: absolute;
+  left: 7rem;
+  bottom: -3.6rem;
+  height: 1rem;
+  border-radius: 6px;
+  content: "";
+}
+
+.timeline-events li:nth-child(1) {
+  bottom: 0px;
+}
+
+.timeline-events li:nth-child(2) {
+  bottom: 16px;
+}
+
+.timeline-events li:nth-child(3) {
+  bottom: 32px;
+}
+
+.timeline-events li:nth-child(4) {
+  bottom: 48px;
+}
+
+.timeline-events li:nth-child(5) {
+  bottom: 64px;
+}
+
+/* Timeline - Events - Colours */
+/* Grey/Green */
+.timeline-events li:nth-child(1):before {
+  background: #c2e34e;
+  background-image: linear-gradient(to right, #868686 0%, #c2e34e 100%);
+  border-radius: 6px;
+}
+
+.timeline-events li:nth-child(1) h3 {
+  color: #c2e34e;
+}
+
+/* Orange */
+.timeline-events li:nth-child(2):before {
+  background: #ff9704;
+  background-image: linear-gradient(to right, #868686 0%, #ff9704 100%);
+}
+
+.timeline-events li:nth-child(2) h3 {
+  color: #ff9704;
+}
+
+/* Blue */
+.timeline-events li:nth-child(3):before {
+  background: #56c2f3;
+  background-image: linear-gradient(to right, #868686 0%, #56c2f3 100%);
+}
+
+.timeline-events li:nth-child(3) h3 {
+  color: #56c2f3;
+}
+
+/* Timeline - Events - Grid */
+/* X years */
+.timeline-event-years-0,
+.timeline-event-years-0:before {
+  width: 0;
+}
+
+/* X.5 years */
+.timeline-event-years-0-5,
+.timeline-event-years-0-5:before {
+  width: 2.5rem;
+}
+
+/* X years */
+.timeline-event-years-1,
+.timeline-event-years-1:before {
+  width: 5rem;
+}
+
+/* X.5 years */
+.timeline-event-years-1-5,
+.timeline-event-years-1-5:before {
+  width: 7.5rem;
+}
+
+/* X years */
+.timeline-event-years-2,
+.timeline-event-years-2:before {
+  width: 10rem;
+}
+
+/* X.5 years */
+.timeline-event-years-2-5,
+.timeline-event-years-2-5:before {
+  width: 12.5rem;
+}
+
+/* X years */
+.timeline-event-years-3,
+.timeline-event-years-3:before {
+  width: 15rem;
+}
+
+/* X.5 years */
+.timeline-event-years-3-5,
+.timeline-event-years-3-5:before {
+  width: 17.5rem;
+}
+
+/* X years */
+.timeline-event-years-4,
+.timeline-event-years-4:before {
+  width: 20rem;
+}
+
+/* X.5 years */
+.timeline-event-years-4-5,
+.timeline-event-years-4-5:before {
+  width: 22.5rem;
+}
+
+/* X years */
+.timeline-event-years-5,
+.timeline-event-years-5:before {
+  width: 25rem;
+}
+
+/* X.5 years */
+.timeline-event-years-5-5,
+.timeline-event-years-5-5:before {
+  width: 27.5rem;
+}
+
+/* X years */
+.timeline-event-years-6,
+.timeline-event-years-6:before {
+  width: 30rem;
+}
+
+/* X.5 years */
+.timeline-event-years-6-5,
+.timeline-event-years-6-5:before {
+  width: 32.5rem;
+}
+
+/* X years */
+.timeline-event-years-7,
+.timeline-event-years-7:before {
+  width: 35rem;
+}
+
+/* X.5 years */
+.timeline-event-years-7-5,
+.timeline-event-years-7-5:before {
+  width: 37.5rem;
+}
+
+/* X years */
+.timeline-event-years-8,
+.timeline-event-years-8:before {
+  width: 40rem;
+}
+
+/* X.5 years */
+.timeline-event-years-8-5,
+.timeline-event-years-8-5:before {
+  width: 42.5rem;
+}
+
+/* X.5 years */
+.timeline-event-years-9,
+.timeline-event-years-9:before {
+  width: 50rem;
 }
