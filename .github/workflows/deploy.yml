@@ -24,4 +24,4 @@ jobs:
 
       - name: Synv files to S3 bucket
         run: |
-          aws s3 sync . s3://yanlong-homepage --delete -- exclude ".git/*"
+          aws s3 sync . s3://yanlong-homepage --delete --exclude ".git/*"
