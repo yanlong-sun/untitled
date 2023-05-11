@@ -28,4 +28,4 @@ jobs:
 
       - name: Make files public
         run: |
-          aws s3api put-bucket-acl --bucket yanlong-homepage --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers
+          aws s3api put-object-acl --bucket yanlong-homepage --acl public-read --recursive
