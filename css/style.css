@@ -1,12 +1,13 @@
 /*   nav bar   */
 .header {
   height: 15vh;
+  width: 100rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 2.4rem;
   border-bottom: 0.5px #555 solid;
-  position: relative;
 }
 .home-link:link,
 .home-link:visited {
@@ -52,7 +53,7 @@
 .home {
   width: 100rem;
   margin: 0 auto;
-  height: 85vh;
+  min-height: 55rem;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -267,130 +268,131 @@ span p {
 /*  TimeLine  */
 /* *********** */
 #part2-experience {
-  height: 100vh;
+  width: 100rem;
+  margin: 0 auto;
   border-bottom: 0.5px #555 solid;
-  background-size: 100%;
-  background-size: 100px 100px;
 }
 
 .timeline-container {
   width: 100rem;
-  margin: 3.2rem auto;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
-
+.timeline-header {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #9ce62a;
+  letter-spacing: 0.6rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
 .chart {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-}
-
-.timeline-header {
-  font-size: 3.2rem;
-  font-weight: 400;
-  text-transform: uppercase;
+  align-items: center;
+  border-radius: 6px;
+  padding-top: 4rem;
+  gap: 5rem;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0 20px,
+    #676767 9.9rem,
+    #5d5d5d 10rem
+  );
 }
 
 /* Timeline - Years */
 .timelines-years {
-  padding: 0 2rem;
+  width: 100rem;
   border-radius: 6px;
   display: flex;
-  justify-content: space-between;
   background-image: linear-gradient(to right, #edf7ca 0%, #bbe7fa 100%);
   list-style: none;
 }
 
 .timelines-years li {
   display: inline-block;
-  width: 20rem;
+  width: 10rem;
   color: #c571b9;
   font-size: 1.2rem;
-  text-indent: -0.8rem;
-}
-
-/* Display last year */
-.timelines-years li:last-child {
-  width: 1.2rem;
+  text-align: center;
 }
 
 /* Timeline - Events */
-.timeline-events {
-  padding: 0;
+.timeline-events,
+.timeline-events-work {
+  width: 100rem;
   list-style: none;
-
-  white-space: nowrap;
-  /* Fix display: inline-block spacing issue */
-  font-size: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .timeline-events h2,
 .timeline-events h3,
 .timeline-events h4 {
-  margin: 0 0 1px 0;
-  font-weight: normal;
-  font-size: 11px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.timeline-events h2 {
+.timeline-events-work h2,
+.timeline-events-work h3,
+.timeline-events-work h4 {
+  width: 15rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.timeline-events h2,
+.timeline-events-work h2 {
   color: white;
   text-transform: uppercase;
 }
 
-.timeline-events h4 {
+.timeline-events h4,
+.timeline-events-work h4 {
   color: #fff;
-  font-style: italic;
 }
 
-.timeline-events li {
-  position: relative;
-  display: inline-block;
+.timeline-events li,
+.timeline-events-work li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.timeline-events li:before {
-  position: absolute;
-  left: 7rem;
-  bottom: -3.6rem;
+.timeline-events li:before,
+.timeline-events-work li:before {
   height: 1rem;
   border-radius: 6px;
   content: "";
 }
 
 .timeline-events li:nth-child(1) {
-  bottom: 0px;
+  margin-left: 7rem;
 }
 
 .timeline-events li:nth-child(2) {
-  bottom: 16px;
-}
-
-.timeline-events li:nth-child(3) {
-  bottom: 32px;
-}
-
-.timeline-events li:nth-child(4) {
-  bottom: 48px;
-}
-
-.timeline-events li:nth-child(5) {
-  bottom: 64px;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
 }
 
 /* Timeline - Events - Colours */
-/* Grey/Green */
 .timeline-events li:nth-child(1):before {
   background: #c2e34e;
   background-image: linear-gradient(to right, #868686 0%, #c2e34e 100%);
-  border-radius: 6px;
 }
 
 .timeline-events li:nth-child(1) h3 {
   color: #c2e34e;
 }
 
-/* Orange */
 .timeline-events li:nth-child(2):before {
   background: #ff9704;
   background-image: linear-gradient(to right, #868686 0%, #ff9704 100%);
@@ -400,127 +402,264 @@ span p {
   color: #ff9704;
 }
 
+.timeline-events-work li:nth-child(1) {
+  margin-left: 39rem;
+}
+
+.timeline-events-work li:nth-child(2) {
+  margin-left: 7rem;
+}
+
+.timeline-events-work li:nth-child(3) {
+  margin-bottom: 2rem;
+}
+
+/* Timeline - Work - Colours */
+.timeline-events-work li:nth-child(1):before {
+  background: #c2e34e;
+  background-image: linear-gradient(to right, #868686 0%, #c2e34e 100%);
+}
+
+.timeline-events-work li:nth-child(1) h3 {
+  color: #c2e34e;
+}
+
+/* Orange */
+.timeline-events-work li:nth-child(2):before {
+  background: #ff9704;
+  background-image: linear-gradient(to right, #868686 0%, #ff9704 100%);
+}
+
+.timeline-events-work li:nth-child(2) h3 {
+  color: #ff9704;
+}
+
 /* Blue */
-.timeline-events li:nth-child(3):before {
+.timeline-events-work li:nth-child(3):before {
   background: #56c2f3;
   background-image: linear-gradient(to right, #868686 0%, #56c2f3 100%);
 }
 
-.timeline-events li:nth-child(3) h3 {
+.timeline-events-work li:nth-child(3) h3 {
   color: #56c2f3;
 }
-
-/* Timeline - Events - Grid */
+/* Timeline - - Grid */
 /* X years */
-.timeline-event-years-0,
-.timeline-event-years-0:before {
-  width: 0;
+.timeline-event-years-bs,
+.timeline-event-years-bs:before {
+  width: 38rem;
 }
 
-/* X.5 years */
-.timeline-event-years-0-5,
-.timeline-event-years-0-5:before {
-  width: 2.5rem;
-}
-
-/* X years */
-.timeline-event-years-1,
-.timeline-event-years-1:before {
-  width: 5rem;
-}
-
-/* X.5 years */
-.timeline-event-years-1-5,
-.timeline-event-years-1-5:before {
-  width: 7.5rem;
-}
-
-/* X years */
-.timeline-event-years-2,
-.timeline-event-years-2:before {
-  width: 10rem;
-}
-
-/* X.5 years */
-.timeline-event-years-2-5,
-.timeline-event-years-2-5:before {
-  width: 12.5rem;
-}
-
-/* X years */
-.timeline-event-years-3,
-.timeline-event-years-3:before {
-  width: 15rem;
-}
-
-/* X.5 years */
-.timeline-event-years-3-5,
-.timeline-event-years-3-5:before {
-  width: 17.5rem;
-}
-
-/* X years */
-.timeline-event-years-4,
-.timeline-event-years-4:before {
+.timeline-event-years-ms,
+.timeline-event-years-ms:before {
   width: 20rem;
 }
 
-/* X.5 years */
-.timeline-event-years-4-5,
-.timeline-event-years-4-5:before {
-  width: 22.5rem;
+.timeline-event-years-ra1,
+.timeline-event-years-ra1:before {
+  width: 9rem;
 }
 
-/* X years */
-.timeline-event-years-5,
-.timeline-event-years-5:before {
-  width: 25rem;
+.timeline-event-years-ra2,
+.timeline-event-years-ra2:before {
+  width: 14rem;
 }
 
-/* X.5 years */
-.timeline-event-years-5-5,
-.timeline-event-years-5-5:before {
-  width: 27.5rem;
+.timeline-event-years-tu,
+.timeline-event-years-tu:before {
+  width: 11rem;
 }
 
-/* X years */
-.timeline-event-years-6,
-.timeline-event-years-6:before {
-  width: 30rem;
+/* *********** */
+/*  Projects  */
+/* *********** */
+
+#part3-projects {
+  width: 100rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px #555 solid;
+  gap: 5rem;
+  color: #fff;
+}
+.projects-header {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #9ce62a;
+  letter-spacing: 0.6rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+.projects-container {
+  display: grid;
+  width: 80rem;
+  grid-template-columns: 20rem 1fr;
+  margin-bottom: 10rem;
+}
+.projects-year {
+  grid-column: 1/-1;
+  margin-top: 2rem;
+  padding: 2rem 18rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #e1e1e1;
 }
 
-/* X.5 years */
-.timeline-event-years-6-5,
-.timeline-event-years-6-5:before {
-  width: 32.5rem;
+.projects-time {
+  grid-column: 1/2;
+  justify-self: end;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  position: relative;
+}
+.clock-icon {
+  position: absolute;
+  top: 0;
+  right: -9%;
+  width: 2rem;
+  padding-top: 1rem;
+  background-color: #676767;
+}
+.projects-content {
+  grid-column: 2/3;
+  padding-left: 2rem;
+  border-left: 2px #868686 solid;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
 }
 
-/* X years */
-.timeline-event-years-7,
-.timeline-event-years-7:before {
-  width: 35rem;
+.projects-type {
+  margin-bottom: 1.6rem;
+}
+.tag {
+  padding: 0.4rem 1rem;
+  color: #666666;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-/* X.5 years */
-.timeline-event-years-7-5,
-.timeline-event-years-7-5:before {
-  width: 37.5rem;
+.web {
+  background-color: #ffa11d;
+}
+.web:link,
+.web:visited {
+  transition: all 0.3s;
 }
 
-/* X years */
-.timeline-event-years-8,
-.timeline-event-years-8:before {
-  width: 40rem;
+.web:hover,
+.web:active {
+  cursor: pointer;
+  background-color: #ffb64f;
 }
 
-/* X.5 years */
-.timeline-event-years-8-5,
-.timeline-event-years-8-5:before {
-  width: 42.5rem;
+.backend {
+  background-color: #56c2f3;
+}
+.backend:link,
+.backend:visited {
+  transition: all 0.3s;
 }
 
-/* X.5 years */
-.timeline-event-years-9,
-.timeline-event-years-9:before {
+.backend:hover,
+.backend:active {
+  cursor: pointer;
+  background-color: #89d4f7;
+}
+
+.ml {
+  background-color: #b0eb55;
+}
+.ml:link,
+.ml:visited {
+  transition: all 0.3s;
+}
+
+.ml:hover,
+.ml:active {
+  cursor: pointer;
+  background-color: #cef395;
+}
+
+.image-processing {
+  background-color: #db7ecd;
+}
+.image-processing:link,
+.image-processing:visited {
+  transition: all 0.3s;
+}
+
+.image-processing:hover,
+.image-processing:active {
+  cursor: pointer;
+  background-color: #e6a5dc;
+}
+
+.projects-name {
+  margin-bottom: 1.2rem;
+}
+.projects-name h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.tech-stack {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #676767;
+  width: 20rem;
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.tech-stack img {
+  border-radius: 6px;
+  height: 1.6rem;
+  width: auto;
+}
+
+.projects-details {
+  margin-top: 1.2rem;
   width: 50rem;
+  height: 10rem;
+}
+.projects-details p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.anchor-more {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.anchor-more a:link,
+.anchor-more a:visited {
+  transition: all 0.3s;
+}
+
+.anchor-more a:hover,
+.anchor-more a:active {
+  border-bottom: 1px #555 solid;
+  cursor: pointer;
+}
+.anchor-display {
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem;
+}
+.footer h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
