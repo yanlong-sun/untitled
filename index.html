@@ -20,6 +20,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="js/script.js"></script>
     <title>Yanlong Sun</title>
     <link
       data-vue-tag="ssr"
@@ -30,155 +31,164 @@
     />
   </head>
   <body>
-    <nav class="header">
-      <a href="#" class="home-link"
-        ><ion-icon name="home-outline"></ion-icon
-      ></a>
-      <ul class="nav-items">
-        <li><a href="#part2-experience">Timeline</a></li>
-        <li><a href="#part3-projects">Projects</a></li>
-        <li><a href="#">Posts</a></li>
-      </ul>
-    </nav>
-    <section class="home">
-      <div class="terminal-container">
-        <div class="terminal-header">
-          <div class="terminal-header-button">
-            <button class="btn close">
-              <ion-icon name="close-circle" class="icon"></ion-icon>
-            </button>
-            <button class="btn hide">
-              <ion-icon name="remove-circle" class="icon"></ion-icon>
-            </button>
-            <button class="btn zoom">
-              <ion-icon name="chevron-down-circle" class="icon"></ion-icon>
-            </button>
+    <section class="section1">
+      <nav class="header">
+        <a href="#" class="home-link"
+          ><ion-icon name="home-outline"></ion-icon
+        ></a>
+        <ul class="nav-items">
+          <li><a class="item" href="#part2-experience">Timeline</a></li>
+          <li><a class="item" href="#part3-projects">Projects</a></li>
+          <li><a class="item" href="#">Posts</a></li>
+        </ul>
+      </nav>
+      <div class="home">
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-header-button">
+              <button class="btn close">
+                <ion-icon name="close-circle" class="icon"></ion-icon>
+              </button>
+              <button class="btn hide">
+                <ion-icon name="remove-circle" class="icon"></ion-icon>
+              </button>
+              <button class="btn zoom">
+                <ion-icon name="chevron-down-circle" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="terminal-title">yanlongsun@Yanlong</div>
           </div>
-          <div class="terminal-title">yanlongsun@Yanlong</div>
+          <div class="terminal-body">
+            <!-- hello -->
+            <div class="qa">
+              <div class="question">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">echo 'Hello World!'</span>
+              </div>
+              <div class="response">
+                <span class="output">
+                  <span class="code-color code-color-1">Hello</span>,
+                  <span class="code-color code-color-2">welcome</span> to my
+                  personal webpage!
+                </span>
+              </div>
+            </div>
+            <!-- whoami -->
+            <div class="qa">
+              <div class="question">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">whoami</span>
+              </div>
+              <div class="response">
+                <span class="output">
+                  My name is
+                  <span class="code-color code-color-3">Yanlong</span></span
+                >
+              </div>
+            </div>
+            <!-- pwd -->
+            <div class="qa">
+              <div class="question">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">pwd</span>
+              </div>
+              <div class="response">
+                <span class="output">
+                  I currently reside in
+                  <span class="code-color code-color-4">Los Angeles</span>
+                </span>
+              </div>
+            </div>
+            <!-- grep -r 'Contact' -->
+            <div class="qa">
+              <div class="question">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span class="command">grep -r 'Contact'</span>
+              </div>
+              <div class="response">
+                <span class="output">
+                  <p>
+                    "./<span class="code-color code-color-5">email</span>:
+                    sunyanlong712@gmail.com"
+                  </p>
+                  <p>
+                    "./phone:
+                    <span class="code-color code-color-2">571-315-3972</span>"
+                  </p>
+                </span>
+              </div>
+            </div>
+            <!-- ... -->
+            <div class="qa">
+              <div class="question">
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon"
+                ></ion-icon>
+                <span class="prompt">~</span>
+                <span id="id"></span>
+                <div class="console-underscore" id="console">&#95;</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="terminal-body">
-          <!-- hello -->
-          <div class="qa qa--1">
-            <div class="question question--1">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="arrow-icon"
-              ></ion-icon>
-              <span class="prompt">~</span>
-              <span class="command">echo 'Hello World!'</span>
-            </div>
-            <div class="response response--1">
-              <span class="output">
-                <span class="code-color code-color-1">Hello</span>, and
-                <span class="code-color code-color-2">welcome</span> to my
-                personal webpage!
-              </span>
-            </div>
+        <div class="introduction">
+          <h1 class="myname">Yanlong Sun</h1>
+          <p class="summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            vero architecto reprehenderit deleniti, id cumque recusandae
+            exercitationem nulla quae molestias itaque, iure inventore fuga,
+            nostrum tenetur nisi dolores adipisci tempore.
+          </p>
+          <div class="contact">
+            <ul class="contact-info">
+              <li>
+                <a href="https://github.com/yanlong-sun"
+                  ><ion-icon
+                    name="logo-github"
+                    class="icon-contact icon-github"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yanlong-sun/"
+                  ><ion-icon
+                    name="logo-linkedin"
+                    class="icon-contact icon-linkedin"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yanlong-sun/"
+                  ><ion-icon
+                    name="mail-outline"
+                    class="icon-contact icon-mail"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
           </div>
-          <!-- whoami -->
-          <div class="qa qa--1">
-            <div class="question question--1">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="arrow-icon"
-              ></ion-icon>
-              <span class="prompt">~</span>
-              <span class="command">whoami</span>
-            </div>
-            <div class="response response--1">
-              <span class="output">
-                My name is
-                <span class="code-color code-color-3">Yanlong</span></span
-              >
-            </div>
-          </div>
-          <!-- pwd -->
-          <div class="qa qa--1">
-            <div class="question question--1">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="arrow-icon"
-              ></ion-icon>
-              <span class="prompt">~</span>
-              <span class="command">pwd</span>
-            </div>
-            <div class="response response--1">
-              <span class="output">
-                I currently reside in
-                <span class="code-color code-color-4">Los Angeles</span>
-              </span>
-            </div>
-          </div>
-          <!-- grep -r 'Contact' -->
-          <div class="qa qa--1">
-            <div class="question question--1">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="arrow-icon"
-              ></ion-icon>
-              <span class="prompt">~</span>
-              <span class="command">grep -r 'Contact'</span>
-            </div>
-            <div class="response response--1">
-              <span class="output">
-                <p>
-                  "./<span class="code-color code-color-5">email</span>:
-                  sunyanlong712@gmail.com"
-                </p>
-                <p>
-                  "./phone:
-                  <span class="code-color code-color-2">571-315-3972</span>"
-                </p>
-              </span>
-            </div>
-          </div>
-          <!-- ... -->
-          <div class="qa qa--1">
-            <div class="question question--1">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="arrow-icon"
-              ></ion-icon>
-              <span class="prompt">~</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="introduction">
-        <h1 class="myname">Yanlong Sun</h1>
-        <p class="summary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero
-          architecto reprehenderit deleniti, id cumque recusandae exercitationem
-          nulla quae molestias itaque, iure inventore fuga, nostrum tenetur nisi
-          dolores adipisci tempore.
-        </p>
-        <div class="contact">
-          <span
-            ><a href="https://github.com/yanlong-sun"
-              ><ion-icon
-                name="logo-github"
-                class="icon-contact icon-github"
-              ></ion-icon></a
-          ></span>
-          <span
-            ><a href="https://www.linkedin.com/in/yanlong-sun/"
-              ><ion-icon
-                name="logo-linkedin"
-                class="icon-contact icon-linkedin"
-              ></ion-icon></a
-          ></span>
-          <span
-            ><a href="https://www.linkedin.com/in/yanlong-sun/"
-              ><ion-icon
-                name="mail-outline"
-                class="icon-contact icon-mail"
-              ></ion-icon></a
-          ></span>
         </div>
       </div>
     </section>
 
-    <section id="part2-experience">
+    <section id="part2-experience" class="section">
       <div class="timeline-container">
         <h2 class="timeline-header">Timeline</h2>
         <div class="chart">
@@ -229,7 +239,7 @@
       </div>
     </section>
 
-    <section id="part3-projects">
+    <section id="part3-projects" class="section">
       <h2 class="projects-header">Project Experience</h2>
       <div class="projects-container">
         <div class="projects-year">2023</div>
@@ -254,16 +264,19 @@
             <img src="img/docker.svg" alt="docker.svg icon" />
           </div>
 
-          <div class="projects-details">
+          <div class="projects-details projects-details--1">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
               incidunt, ratione aliquid veniam commodi eaque sed eos ea iure
               eveniet recusandae officia alias aspernatur deserunt, atque
               reiciendis perspiciatis cumque iste.
+              <span class="fade"></span>
             </p>
           </div>
-          <div class="anchor-more anchor-display">
-            <a class="more">Read more &darr;</a>
+          <div class="expand-collapse">
+            <span class="fade"></span>
+            <button class="more show-active">Show More &darr;</button>
+            <button class="less">Show Less &uarr;</button>
           </div>
         </div>
         <div class="projects-time">
@@ -291,7 +304,7 @@
             <img src="img/aws.svg" alt="aws.svg icon" />
             <img src="img/selenium.svg" alt="selenium.svg icon" />
           </div>
-          <div class="projects-details">
+          <div class="projects-details projects-details--2">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
               incidunt, ratione aliquid veniam commodi eaque sed eos ea iure
@@ -299,8 +312,10 @@
               reiciendis perspiciatis cumque iste.
             </p>
           </div>
-          <div class="anchor-more anchor-display">
-            <a class="more">Read more &darr;</a>
+          <div class="expand-collapse">
+            <span class="fade"></span>
+            <button class="more show-active">Show More &darr;</button>
+            <button class="less">Show Less &uarr;</button>
           </div>
         </div>
         <div class="projects-year">2021</div>
@@ -322,16 +337,25 @@
             <img src="img/python.svg" alt="python icon" />
             <img src="img/tensorflow.svg" alt="tensorflow icon" />
           </div>
-          <div class="projects-details">
+          <div class="projects-details projects-details--3">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
               incidunt, ratione aliquid veniam commodi eaque sed eos ea iure
               eveniet recusandae officia alias aspernatur deserunt, atque
-              reiciendis perspiciatis cumque iste.
+              reiciendis perspiciatis cumque iste. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Excepturi recusandae maxime
+              voluptatum veritatis, placeat expedita neque omnis enim, ab ad
+              porro ut quod aut deleniti eligendi nulla maiores, sunt Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo
+              nisi consequatur porro dignissimos sint iste ab suscipit odit?
+              Ducimus molestias molestiae similique deserunt tempora, eos
+              adipisci a quis pariatur!
             </p>
           </div>
-          <div class="anchor-more anchor-display">
-            <a class="more">Read more &darr;</a>
+          <div class="expand-collapse">
+            <span class="fade"></span>
+            <button class="more show-active">Show More &darr;</button>
+            <button class="less">Show Less &uarr;</button>
           </div>
         </div>
         <div class="projects-year">2019</div>
@@ -353,22 +377,27 @@
             <img src="img/python.svg" alt="python icon" />
             <img src="img/tensorflow.svg" alt="tensorflow icon" />
           </div>
-          <div class="projects-details">
-            <p>
+          <div class="projects-details projects-details--4">
+            <p class="projects-details-expand">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
               incidunt, ratione aliquid veniam commodi eaque sed eos ea iure
               eveniet recusandae officia alias aspernatur deserunt, atque
-              reiciendis perspiciatis cumque iste.
+              reiciendis perspiciatis cumque Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Voluptates quis optio, quo aliquid
+              natus officiis totam tenetur fugiat dolor a maiores nihil quia
+              tempora commodi adipisci qui consectetur tempore illum?
             </p>
           </div>
-          <div class="anchor-more anchor-display">
-            <a class="more">Read more &darr;</a>
+          <div class="expand-collapse">
+            <span class="fade"></span>
+            <button class="more show-active">Show More &darr;</button>
+            <button class="less">Show Less &uarr;</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="footer">
-      <h2>All Content & design &copy; 2023 Yanlong Sun</h2>
+    <section class="footer section">
+      <h2>&copy; 2023 Yanlong Sun</h2>
     </section>
   </body>
 </html>

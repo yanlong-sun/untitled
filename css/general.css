@@ -53,6 +53,7 @@ Medium: 11px
 html {
   background-color: #676767;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
