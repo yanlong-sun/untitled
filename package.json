@@ -1,0 +1,22 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanlong-sun/untitled.git"
+  },
+  "author": "Yanlong Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanlong-sun/untitled/issues"
+  },
+  "homepage": "https://github.com/yanlong-sun/untitled#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
